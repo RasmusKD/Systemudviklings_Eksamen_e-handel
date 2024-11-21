@@ -12,8 +12,7 @@ An e-commerce platform for buying and selling items, built with a Node.js backen
 - │   ├── package.json         # Backend dependencies
 - │   ├── .env                 # Backend environment variables
 - │   └── uploads/             # Directory for uploaded files
-- │
-- ├── frontend/                # React frontend files
+- │   ├── frontend/                # React frontend files
 - │   ├── src/                 # React components and pages
 - │   ├── public/              # Static assets
 - │   ├── package.json         # Frontend dependencies
