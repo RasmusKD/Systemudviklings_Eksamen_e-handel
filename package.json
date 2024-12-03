@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run start:backend & npm run start:frontend",
-    "dev": "npm run dev:backend & npm run dev:frontend",
+    "start": "npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "start:backend": "npm --prefix backend start",
-    "start:frontend": "npm --prefix frontend start",
     "dev:backend": "npm --prefix backend run dev",
+    "start:frontend": "npm --prefix frontend start",
     "dev:frontend": "npm --prefix frontend start",
     "test": "npm --prefix backend run test && npm --prefix frontend run test",
     "build:frontend": "npm --prefix frontend run build"
-  },
+  }
+,
   "workspaces": [
     "backend",
     "frontend"
-  ]
+  ],
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
 }

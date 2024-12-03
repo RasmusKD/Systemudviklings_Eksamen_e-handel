@@ -14,7 +14,6 @@ yarn-error.log*
 .env.development
 .env.production
 .env.test
-.env.example
 
 # Build output
 frontend/build/
@@ -28,3 +27,4 @@ tmp/
 
 # OS generated files
 .D
+node_modules/.package-lock.json
