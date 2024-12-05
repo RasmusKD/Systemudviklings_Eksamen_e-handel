@@ -1,6 +1,6 @@
 
 require('dotenv').config();
-
+//hej test commit med mikkel
 console.log('MONGO_URI:', process.env.MONGO_URI); //for at tjekke om vores .env blev indlæst korrekt, dette kan fjernes hvis det er
 console.log('NODE_ENV:', process.env.NODE_ENV); //for at tjekke om vores .env blev indlæst korrekt, dette kan fjernes hvis det er
 const express = require('express');

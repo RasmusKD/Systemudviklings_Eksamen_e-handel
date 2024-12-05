@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import CreateItemPage from "./pages/CreateItemPage";
-
+//hej test commit med mikkel
 const App: React.FC = () => {
     return (
         <Router>
