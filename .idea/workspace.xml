@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e8b3bda-9aef-4d44-8246-ed2a2b1664e4" name="Changes" comment="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage" />
+    <list default="true" id="2e8b3bda-9aef-4d44-8246-ed2a2b1664e4" name="Changes" comment="test for at tjekke om mine commits er kommet" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733394046666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test for at tjekke om mine commits er kommet">
+      <option name="closed" value="true" />
+      <created>1733394244609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733394244609</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +127,7 @@
     <MESSAGE value="updated port on front end + env" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json" />
     <MESSAGE value="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage" />
-    <option name="LAST_COMMIT_MESSAGE" value="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage" />
+    <MESSAGE value="test for at tjekke om mine commits er kommet" />
+    <option name="LAST_COMMIT_MESSAGE" value="test for at tjekke om mine commits er kommet" />
   </component>
 </project>
