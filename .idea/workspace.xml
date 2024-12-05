@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e8b3bda-9aef-4d44-8246-ed2a2b1664e4" name="Changes" comment="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,12 +37,12 @@
     &quot;assignee&quot;: &quot;RasmusKD&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RasmusKD/Systemudviklings_Eksamen_e-handel.git&quot;,
-    &quot;accountId&quot;: &quot;03f71c05-5e08-4af6-b1c4-e607427b4c20&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RasmusKD/Systemudviklings_Eksamen_e-handel.git",
+    "accountId": "73ca9957-1283-469b-88b3-98a8dc36da9b"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -60,7 +62,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.0",
+    "javascript.nodejs.core.library.typings.version": "20.10.8",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +98,7 @@
       <updated>1732005591273</updated>
       <workItem from="1732005592926" duration="15710000" />
       <workItem from="1732610299227" duration="628000" />
+      <workItem from="1733395733672" duration="3370000" />
     </task>
     <task id="LOCAL-00001" summary="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage">
       <option name="closed" value="true" />
