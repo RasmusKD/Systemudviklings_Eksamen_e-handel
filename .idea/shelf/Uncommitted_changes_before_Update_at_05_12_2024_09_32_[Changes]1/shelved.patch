@@ -1,0 +1,120 @@
+Index: backend/.env.example
+===================================================================
+diff --git a/backend/.env.example b/backend/.env.example
+deleted file mode 100644
+--- a/backend/.env.example	(revision b9dcfa59d8e9f83f09548bc6f7e5ba3cb036ef6d)
++++ /dev/null	(revision b9dcfa59d8e9f83f09548bc6f7e5ba3cb036ef6d)
+@@ -1,4 +0,0 @@
+-JWT_SECRET=your_jwt_secret_here
+-//node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+-MONGO_URI=mongodb://localhost:27017/ecommerce
+-MONGO_URI_TEST=mongodb://localhost:27017/ecommerce_test
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"e-commerce-platform\",\r\n  \"version\": \"1.0.0\",\r\n  \"private\": true,\r\n  \"scripts\": {\r\n    \"start\": \"npm run start:backend & npm run start:frontend\",\r\n    \"dev\": \"npm run dev:backend & npm run dev:frontend\",\r\n    \"start:backend\": \"npm --prefix backend start\",\r\n    \"start:frontend\": \"npm --prefix frontend start\",\r\n    \"dev:backend\": \"npm --prefix backend run dev\",\r\n    \"dev:frontend\": \"npm --prefix frontend start\",\r\n    \"test\": \"npm --prefix backend run test && npm --prefix frontend run test\",\r\n    \"build:frontend\": \"npm --prefix frontend run build\"\r\n  },\r\n  \"workspaces\": [\r\n    \"backend\",\r\n    \"frontend\"\r\n  ]\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision b9dcfa59d8e9f83f09548bc6f7e5ba3cb036ef6d)
++++ b/package.json	(date 1733216746290)
+@@ -15,5 +15,15 @@
+   "workspaces": [
+     "backend",
+     "frontend"
+-  ]
++  ],
++  "description": "An e-commerce platform for buying and selling items, built with a Node.js backend, a React frontend, and MongoDB for database management.",
++  "main": "index.js",
++  "dependencies": {
++    "backend": "^1.0.0",
++    "frontend": "^0.1.0"
++  },
++  "devDependencies": {},
++  "keywords": [],
++  "author": "",
++  "license": "ISC"
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2e8b3bda-9aef-4d44-8246-ed2a2b1664e4\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"TypeScript JSX File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;RasmusKD&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/RasmusKD/Systemudviklings_Eksamen_e-handel.git&quot;,\r\n    &quot;accountId&quot;: &quot;03f71c05-5e08-4af6-b1c4-e607427b4c20&quot;\r\n  }\r\n}</component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2p3rRHCii5tFrlxKSaikdYNGk1Q\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"javascript.nodejs.core.library.configured.version\": \"20.10.0\",\r\n    \"javascript.nodejs.core.library.typings.version\": \"20.10.0\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"ts.external.directory.path\": \"C:\\\\Program Files\\\\JetBrains\\\\WebStorm 2024.2.3\\\\plugins\\\\javascript-plugin\\\\jsLanguageServicesImpl\\\\external\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Rasmus\\Desktop\\e-commerce-platform\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2e8b3bda-9aef-4d44-8246-ed2a2b1664e4\" name=\"Changes\" comment=\"\" />\r\n      <created>1732005591273</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1732005591273</updated>\r\n      <workItem from=\"1732005592926\" duration=\"15710000\" />\r\n      <workItem from=\"1732610299227\" duration=\"628000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b9dcfa59d8e9f83f09548bc6f7e5ba3cb036ef6d)
++++ b/.idea/workspace.xml	(date 1733387539032)
+@@ -4,7 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2e8b3bda-9aef-4d44-8246-ed2a2b1664e4" name="Changes" comment="" />
++    <list default="true" id="2e8b3bda-9aef-4d44-8246-ed2a2b1664e4" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/backend/.env.example" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -30,7 +35,7 @@
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/RasmusKD/Systemudviklings_Eksamen_e-handel.git&quot;,
+-    &quot;accountId&quot;: &quot;03f71c05-5e08-4af6-b1c4-e607427b4c20&quot;
++    &quot;accountId&quot;: &quot;3bc33ef0-9065-42b8-a49c-41076c8c106e&quot;
+   }
+ }</component>
+   <component name="MarkdownSettingsMigration">
+@@ -45,23 +50,23 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "master",
+-    "javascript.nodejs.core.library.configured.version": "20.10.0",
+-    "javascript.nodejs.core.library.typings.version": "20.10.0",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
++    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.9&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\Rasmus\Desktop\e-commerce-platform" />
+@@ -84,6 +89,8 @@
+       <updated>1732005591273</updated>
+       <workItem from="1732005592926" duration="15710000" />
+       <workItem from="1732610299227" duration="628000" />
++      <workItem from="1733215864703" duration="2758000" />
++      <workItem from="1733221133067" duration="1145000" />
+     </task>
+     <servers />
+   </component>

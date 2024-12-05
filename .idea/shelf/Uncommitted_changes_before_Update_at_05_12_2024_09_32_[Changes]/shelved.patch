@@ -1,0 +1,12 @@
+Index: backend/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.env\r\n!.env.example\r\n
+===================================================================
+diff --git a/backend/.gitignore b/backend/.gitignore
+--- a/backend/.gitignore	(revision b9dcfa59d8e9f83f09548bc6f7e5ba3cb036ef6d)
++++ b/backend/.gitignore	(date 1733217290912)
+@@ -1,2 +1,2 @@
+ .env
+-!.env.example
++!.env
