@@ -8,7 +8,8 @@ const connectDB = async () => {
             throw new Error('MongoDB URI not defined');
         }
 
-        await mongoose.connect(uri); // No options needed
+        // Connect without deprecated options
+        await mongoose.connect(uri);
         console.log('MongoDB Connected');
     } catch (error) {
         console.error('Database connection failed:', error.message);

@@ -41,8 +41,8 @@ console.log('Working directory:', process.cwd());
 // Connect to database
 connectDB();
 
-// Start server //ændrede det også til 3002
-const PORT = process.env.PORT || 3002;
+// Start server
+const PORT = process.env.PORT || 3000;
 if (process.env.NODE_ENV !== 'test') {
     app.listen(PORT, () => {
         console.log(`Server running on http://localhost:${PORT}`);
