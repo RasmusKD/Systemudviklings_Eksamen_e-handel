@@ -17,7 +17,7 @@ yarn-error.log*
 
 # Build output
 frontend/build/
-backend/uploads/
+backend/src/uploads/
 
 # Cache
 .cache/

@@ -6,7 +6,6 @@ const itemSchema = Joi.object({
     price: Joi.number().positive().required(),
     category: Joi.string().required(),
     canBeSent: Joi.boolean().required(),
-    image: Joi.string().uri().optional(),
 });
 
 module.exports = { itemSchema };

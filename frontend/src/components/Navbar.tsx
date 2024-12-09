@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar: React.FC = () => {
     const location = useLocation();
 
-    const isLoggedIn = !!localStorage.getItem("token"); // Check login state
+    const isLoggedIn = !!localStorage.getItem("token");
 
     return (
         <nav className="bg-gray-800 p-4 text-white">
@@ -17,7 +17,17 @@ const Navbar: React.FC = () => {
                         Home
                     </Link>
                 </li>
-                {!isLoggedIn && (
+                {isLoggedIn && (
+                    <li>
+                        <Link
+                            to="/items/new"
+                            className={location.pathname === "/items/new" ? "font-bold" : ""}
+                        >
+                            Create Item
+                        </Link>
+                    </li>
+                )}
+                {!isLoggedIn ? (
                     <>
                         <li>
                             <Link
@@ -36,8 +46,7 @@ const Navbar: React.FC = () => {
                             </Link>
                         </li>
                     </>
-                )}
-                {isLoggedIn && (
+                ) : (
                     <li>
                         <Link
                             to="/logout"

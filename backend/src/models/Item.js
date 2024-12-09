@@ -5,9 +5,9 @@ const itemSchema = new mongoose.Schema({
     description: { type: String, required: true },
     price: { type: Number, required: true },
     category: { type: String, required: true },
-    canBeSent: { type: Boolean, default: false },
+    canBeSent: { type: Boolean, required: true },
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, // Reference to the user
     image: { type: String },
-    createdAt: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model('Item', itemSchema);

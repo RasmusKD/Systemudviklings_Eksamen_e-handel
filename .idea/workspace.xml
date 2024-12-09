@@ -5,17 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e8b3bda-9aef-4d44-8246-ed2a2b1664e4" name="Changes" comment="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Logout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/middlewares/authenticate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/itemApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ItemDetailsPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ItemsListPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/fetchWithAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/config/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/itemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/itemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/errorHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/rateLimiter.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/rateLimiter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/uploadImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/uploadImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/validateData.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/validateData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/itemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/itemRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/schemas/itemSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/schemas/itemSchema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/CreateItemPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/CreateItemPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +36,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
       </list>
@@ -44,12 +56,12 @@
     &quot;assignee&quot;: &quot;RasmusKD&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RasmusKD/Systemudviklings_Eksamen_e-handel.git",
-    "accountId": "73ca9957-1283-469b-88b3-98a8dc36da9b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RasmusKD/Systemudviklings_Eksamen_e-handel.git&quot;,
+    &quot;accountId&quot;: &quot;73ca9957-1283-469b-88b3-98a8dc36da9b&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -62,28 +74,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.10.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.10.8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\backend\src" />
+      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\backend" />
+      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\backend\src\public" />
+      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\frontend\src" />
       <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\frontend\src\pages" />
-      <recent name="C:\Users\Rasmus\Desktop\e-commerce-platform" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -106,7 +121,8 @@
       <updated>1732005591273</updated>
       <workItem from="1732005592926" duration="15710000" />
       <workItem from="1732610299227" duration="628000" />
-      <workItem from="1733395733672" duration="9362000" />
+      <workItem from="1733395733672" duration="10228000" />
+      <workItem from="1733741206901" duration="11937000" />
     </task>
     <task id="LOCAL-00001" summary="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage">
       <option name="closed" value="true" />
