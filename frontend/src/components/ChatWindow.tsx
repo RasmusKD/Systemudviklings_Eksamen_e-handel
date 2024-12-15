@@ -41,7 +41,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
     const fetchChatMessages = async (chatId: string) => {
         try {
             const response = await fetch(
-                `${process.env.REACT_APP_API_URL}/chats/${chatId}/messages`,
+                `${process.env.REACT_APP_API_URL}/chats/${chatId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -50,13 +50,16 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
             );
 
             if (response.ok) {
-                const messages = await response.json();
+                const chat = await response.json();
+                console.log("Fetched chat:", chat); // Add this line for debugging
                 setChatMessages(prevMessages => ({
                     ...prevMessages,
-                    [chatId]: messages
+                    [chatId]: chat.messages || []
                 }));
             } else {
-                console.error("Failed to fetch chat messages");
+                console.error("Failed to fetch chat messages. Status:", response.status);
+                const errorText = await response.text();
+                console.error("Error response:", errorText);
             }
         } catch (error) {
             console.error("Error fetching chat messages:", error);
@@ -80,14 +83,17 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
             );
 
             if (response.ok) {
-                const newMessage = await response.json();
+                const updatedChat = await response.json();
+                console.log("Updated chat:", updatedChat); // Add this line for debugging
                 setChatMessages(prevMessages => ({
                     ...prevMessages,
-                    [currentChat._id]: [...(prevMessages[currentChat._id] || []), newMessage]
+                    [currentChat._id]: updatedChat.messages || []
                 }));
                 setMessageInput("");
             } else {
-                console.error("Failed to send message");
+                console.error("Failed to send message. Status:", response.status);
+                const errorText = await response.text();
+                console.error("Error response:", errorText);
             }
         } catch (error) {
             console.error("Error sending message:", error);
@@ -153,7 +159,9 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
                                 >
                                     <p className="text-sm">{message.text}</p>
                                     <p className="text-xs mt-1 opacity-70">
-                                        {new Date(message.timestamp).toLocaleString()}
+                                        {message.timestamp
+                                            ? new Date(message.timestamp).toLocaleString()
+                                            : 'No timestamp'}
                                     </p>
                                 </div>
                             </div>
@@ -168,7 +176,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
                     type="text"
                     value={messageInput}
                     className="w-full border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    placeholder="Type a message..."
+                    placeholder="Skriv en besked..."
                     onChange={(e) => setMessageInput(e.target.value)}
                     onKeyDown={(e) => {
                         if (e.key === "Enter" && !e.shiftKey) {
@@ -183,4 +191,3 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
 };
 
 export default ChatWindow;
-
