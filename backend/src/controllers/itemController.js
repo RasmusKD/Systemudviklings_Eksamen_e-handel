@@ -1,4 +1,5 @@
 const Item = require('../models/Item');
+const User = require('../models/User');
 
 // Create a new item
 exports.createItem = async (req, res, next) => {
@@ -46,8 +47,31 @@ exports.getItems = async (req, res, next) => {
     }
 };
 
+exports.getItemsByUser = async (req, res) => {
+    try {
+        console.log('Fetching items for user:', req.user.id);
+        const items = await Item.find({ userId: req.user.id });
+        console.log('Items found:', items);
+        res.json(items);
+    } catch (error) {
+        console.error('Error in getItemsByUser:', error);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
 
-
+// Get item by ID
+exports.getItemById = async (req, res, next) => {
+    try {
+        const item = await Item.findById(req.params.id);
+        if (!item) {
+            return res.status(404).json({ message: 'Item not found' });
+        }
+        res.json(item);
+    } catch (error) {
+        console.error('Error fetching item:', error);
+        res.status(500).json({ message: 'Error fetching item' });
+    }
+};
 
 // Update an item
 exports.updateItem = async (req, res) => {

@@ -5,26 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e8b3bda-9aef-4d44-8246-ed2a2b1664e4" name="Changes" comment="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage">
-      <change afterPath="$PROJECT_DIR$/backend/src/middlewares/authenticate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/itemApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ItemDetailsPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ItemsListPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/fetchWithAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/controllers/chatController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/models/Chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/routes/chatRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ChatIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ChatWindow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/context/ChatContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ProfilePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/fetchWithAuth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_12_2024_09_32_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_12_2024_09_32__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/controllers/itemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/itemController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/errorHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/rateLimiter.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/rateLimiter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/uploadImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/uploadImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/validateData.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/validateData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/models/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/authenticate.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/authenticate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/routes/itemRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/itemRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/schemas/itemSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/schemas/itemSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/userRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/CreateItemPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/CreateItemPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/HomePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ItemDetailsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ItemDetailsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ItemsListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ItemsListPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Logout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Logout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/fetchWithAuth.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -37,8 +46,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
+        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -94,11 +104,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\frontend\src" />
+      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\frontend\src\components" />
+      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\frontend\src\pages" />
       <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\backend\src" />
       <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\backend" />
-      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\backend\src\public" />
-      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\frontend\src" />
-      <recent name="C:\Users\Rasmus\Desktop\intellij projekter\Chat-Server\Systemudviklings_Eksamen_e-handel\frontend\src\pages" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -123,6 +133,10 @@
       <workItem from="1732610299227" duration="628000" />
       <workItem from="1733395733672" duration="10228000" />
       <workItem from="1733741206901" duration="11937000" />
+      <workItem from="1733867341494" duration="4809000" />
+      <workItem from="1733995491913" duration="8046000" />
+      <workItem from="1734082659414" duration="4232000" />
+      <workItem from="1734175109247" duration="18620000" />
     </task>
     <task id="LOCAL-00001" summary="i app.js tilføjede jeg 2 &quot;test&quot; linjer fordi den ikke kunne connecte&#10;Har lavet create itempage">
       <option name="closed" value="true" />
